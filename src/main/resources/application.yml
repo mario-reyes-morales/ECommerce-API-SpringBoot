@@ -1,13 +1,13 @@
 spring:
   application:
-    name: app
+    name: ecommerce-api-springboot
   shell:
     interactive:
       enabled: true
   datasource:
     url: jdbc:mysql://localhost:3306/poodb
-    username: root
-    password: root
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
